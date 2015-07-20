@@ -17,7 +17,7 @@ Examples for source.txt
 
 CPP_EXAMPLE:
 ---------------------------------------------------
-SOLUTION_NAME solutionName
+SOLUTION_NAME SolutionName
 
 CPP_EMPTY ProjectName
 
