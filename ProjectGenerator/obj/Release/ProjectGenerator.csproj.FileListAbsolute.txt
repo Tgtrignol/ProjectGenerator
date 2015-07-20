@@ -1,0 +1,6 @@
+c:\users\blup\documents\visual studio 2013\Projects\ProjectGenerator\ProjectGenerator\bin\Release\ProjectGenerator.exe.config
+c:\users\blup\documents\visual studio 2013\Projects\ProjectGenerator\ProjectGenerator\bin\Release\ProjectGenerator.exe
+c:\users\blup\documents\visual studio 2013\Projects\ProjectGenerator\ProjectGenerator\bin\Release\ProjectGenerator.pdb
+c:\users\blup\documents\visual studio 2013\Projects\ProjectGenerator\ProjectGenerator\obj\Release\ProjectGenerator.exe
+c:\users\blup\documents\visual studio 2013\Projects\ProjectGenerator\ProjectGenerator\obj\Release\ProjectGenerator.pdb
+c:\users\blup\documents\visual studio 2013\Projects\ProjectGenerator\ProjectGenerator\obj\Release\ProjectGenerator.csprojResolveAssemblyReference.cache
