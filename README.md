@@ -11,7 +11,7 @@ Examples for source.txt
 
 CPP_EXAMPLE:
 ---------------------------------------------------
-SOLUTION_NAME solutionName3
+SOLUTION_NAME solutionName
 
 CPP_EMPTY projectName
 
@@ -21,7 +21,7 @@ ENUM EnumName
 
 CS_FORMS_EXAMPLE:
 ---------------------------------------------------
-SOLUTION_NAME solutionName3
+SOLUTION_NAME solutionName
 
 CS_FORMS projectName
 
@@ -35,7 +35,7 @@ INTERFACE InterfaceName
 
 CS_CONSOLE:
 ---------------------------------------------------
-SOLUTION_NAME solutionName3
+SOLUTION_NAME solutionName
 
 CS_CONSOLE projectName
 
