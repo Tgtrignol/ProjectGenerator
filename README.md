@@ -19,7 +19,7 @@ CPP_EXAMPLE:
 ---------------------------------------------------
 SOLUTION_NAME solutionName
 
-CPP_EMPTY projectName
+CPP_EMPTY ProjectName
 
 CLASS ClassName : SuperClassName ; InterfaceName
 
@@ -27,9 +27,9 @@ ENUM EnumName
 
 CS_FORMS_EXAMPLE:
 ---------------------------------------------------
-SOLUTION_NAME solutionName
+SOLUTION_NAME SolutionName
 
-CS_FORMS projectName
+CS_FORMS ProjectName
 
 CLASS ClassName : SuperClassName ; InterfaceName
 
@@ -41,9 +41,9 @@ INTERFACE InterfaceName
 
 CS_CONSOLE:
 ---------------------------------------------------
-SOLUTION_NAME solutionName
+SOLUTION_NAME SolutionName
 
-CS_CONSOLE projectName
+CS_CONSOLE ProjectName
 
 CLASS ClassName : SuperClassName ; InterfaceName
 
