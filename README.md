@@ -2,10 +2,14 @@ Readme:
 ---------------------------------------------------
 Generates a visual studio solution file with premade classes.
 
+
 Usage:
+
 1) Create an empty directory.
+
 2) Create a txt-file called "source.txt" in that directory.
-3) Fill "source.txt"
+
+3) Fill "source.txt".
 
 Examples for source.txt
 
