@@ -11,6 +11,8 @@ Usage:
 
 3) Fill "source.txt".
 
+4) Run the application and select the directory you created.
+
 Examples for source.txt
 
 CPP_EXAMPLE:
