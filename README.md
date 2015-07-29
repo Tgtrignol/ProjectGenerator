@@ -1,6 +1,6 @@
 Readme:
 ---------------------------------------------------
-Generates a visual studio solution file with premade classes.
+Generates a visual studio solution file and project with premade classes.
 
 
 Usage:
