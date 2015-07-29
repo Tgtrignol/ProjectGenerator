@@ -15,7 +15,7 @@ Usage:
 
 Examples for the content of the txt-file.
 
-CPP_EXAMPLE:
+CPP_EMPTY_EXAMPLE:
 ---------------------------------------------------
 SOLUTION_NAME SolutionName
 
@@ -39,7 +39,7 @@ FORM FormName
 
 INTERFACE InterfaceName
 
-CS_CONSOLE:
+CS_CONSOLE_EXAMPLE:
 ---------------------------------------------------
 SOLUTION_NAME SolutionName
 
