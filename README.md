@@ -13,7 +13,7 @@ Usage:
 
 4) Run the application and select the txt-file.
 
-Examples for source.txt
+Examples for the content of the txt-file.
 
 CPP_EXAMPLE:
 ---------------------------------------------------
