@@ -7,11 +7,11 @@ Usage:
 
 1) Create an empty directory.
 
-2) Create a txt-file called "source.txt" in that directory.
+2) Create a txt-file in that directory.
 
-3) Fill "source.txt".
+3) Fill the previous txt-file.
 
-4) Run the application and select the directory you created.
+4) Run the application and select the txt-file.
 
 Examples for source.txt
 
