@@ -10,7 +10,7 @@ namespace ProjectGenerator
     {
         public static void handleWrongUsage()
         {
-            Console.WriteLine("You have not selected a directory, there was no source.txt present or your source.txt was uncorrectly formatted.");
+            Console.WriteLine("You have not selected a source file present or your source file was uncorrectly formatted.");
 
             Console.WriteLine("EXAMPLE 1: CS_FORMS_EXAMPLE");
             Console.WriteLine("---------------------------");
@@ -39,7 +39,7 @@ namespace ProjectGenerator
             Console.WriteLine("---------------------------");
 
             Console.WriteLine("SOLUTION_NAME solutionName3");
-            Console.WriteLine("CS_CONSOLE projectName");
+            Console.WriteLine("CPP_EMPTY projectName");
             Console.WriteLine("");
             Console.WriteLine("CLASS ClassName : SuperClassName ; InterfaceName");
             Console.WriteLine("ENUM EnumName");

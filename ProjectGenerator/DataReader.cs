@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,23 +14,27 @@ namespace ProjectGenerator
         {
             SolutionData solutionData = new SolutionData();
 
-            FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.SelectedPath = "C:\\";
-            DialogResult result = fbd.ShowDialog();
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.InitialDirectory = "C:\\";
+            ofd.Filter = "Text Files (.txt)|*.txt";
+            ofd.Multiselect = false;
+
+            DialogResult result = ofd.ShowDialog();
 
             if (result == DialogResult.OK)
             {
-                solutionData.directoryPath = fbd.SelectedPath;
+                solutionData.directoryPath = Path.GetDirectoryName(ofd.FileName);
             }
             else
             {
                 ErrorHandling.handleWrongUsage();
+                return solutionData;
             }
 
             string[] lines = null;
             try
             {
-                lines = System.IO.File.ReadAllLines(solutionData.directoryPath + "\\source.txt");
+                lines = System.IO.File.ReadAllLines(ofd.FileName);
 
                 foreach (string line in lines)
                 {
