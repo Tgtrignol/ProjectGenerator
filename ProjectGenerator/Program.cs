@@ -136,9 +136,9 @@ namespace ProjectGenerator
                 foreach (ClassData classData in solutionData.classes)
                 {
                     if (classData.classType == ClassType.Enum || classData.classType == ClassType.Class || classData.classType == ClassType.Interface)
-                        project.ProjectItems.AddFromTemplate(@"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ItemTemplates\CSharp\Code\1033\Class\Class.vstemplate", classData.className + ".cs");
+                        project.ProjectItems.AddFromTemplate(@"C:\Program Files (x86)\Microsoft Visual Studio " + dte2.Version + @"\Common7\IDE\ItemTemplates\CSharp\Code\1033\Class\Class.vstemplate", classData.className + ".cs");
                     else if (classData.classType == ClassType.Form)
-                        project.ProjectItems.AddFromTemplate(@"c:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\ItemTemplates\CSharp\Windows Forms\1033\Form\windowsform.vstemplate", classData.className + ".cs");
+                        project.ProjectItems.AddFromTemplate(@"c:\Program Files (x86)\Microsoft Visual Studio " + dte2.Version + @"\Common7\IDE\ItemTemplates\CSharp\Windows Forms\1033\Form\windowsform.vstemplate", classData.className + ".cs");
 
                     ProjectItem projectItem = null;
                     foreach (ProjectItem pItem in project.ProjectItems)
@@ -222,7 +222,7 @@ namespace ProjectGenerator
                                                solutionData.projectName,
                                                solutionData.directoryPath + "\\"
                                                };
-                    dte.LaunchWizard(@"c:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcprojects\emptyproj.vsz", contextParams);
+                    dte.LaunchWizard(@"c:\Program Files (x86)\Microsoft Visual Studio " + dte.Version + @"\VC\vcprojects\emptyproj.vsz", contextParams);
                     break;
             }
         }
