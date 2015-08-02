@@ -34,7 +34,7 @@ namespace ProjectGenerator
             string[] lines = null;
             try
             {
-                lines = System.IO.File.ReadAllLines(ofd.FileName);
+                lines = File.ReadAllLines(ofd.FileName);
 
                 foreach (string line in lines)
                 {
