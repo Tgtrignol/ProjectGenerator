@@ -57,22 +57,22 @@ namespace ProjectGenerator
             #region CPP Writing
             if (solutionData.projectType == ProjectType.CppEmpty) //CPP Example
             {
-                System.IO.Directory.CreateDirectory(solutionData.directoryPath + "\\Source Files");
-                System.IO.Directory.CreateDirectory(solutionData.directoryPath + "\\Header Files");
+                Directory.CreateDirectory(solutionData.directoryPath + "\\Source Files");
+                Directory.CreateDirectory(solutionData.directoryPath + "\\Header Files");
 
                 foreach (ClassData classData in solutionData.classes)
                 {
                     #region Class
                     if (classData.classType == ClassType.Class)
                     {
-                        EnvDTE.Document doc = dte2.ItemOperations.NewFile("General\\Text File", classData.className).Document;
+                        Document doc = dte2.ItemOperations.NewFile("General\\Text File", classData.className).Document;
                         TextSelection txtsel = (TextSelection)doc.Selection;
                         txtsel.Text = "";
                         txtsel.Insert("#include \"" + classData.className + ".h\"\n\n" + classData.className + "::" + classData.className + "()\n{\n}\n\n" + classData.className + "::~" + classData.className + "()\n{\n}");
                         doc.Save(solutionData.directoryPath + "\\Source Files\\" + classData.className + ".cpp");
                         project.ProjectItems.AddFromFile(solutionData.directoryPath + "\\Source Files\\" + classData.className + ".cpp");
 
-                        EnvDTE.Document doc2 = dte2.ItemOperations.NewFile("General\\Text File", classData.className).Document;
+                        Document doc2 = dte2.ItemOperations.NewFile("General\\Text File", classData.className).Document;
                         TextSelection txtsel2 = (TextSelection)doc2.Selection;
                         txtsel2.Text = "";
                         txtsel2.Insert("#pragma once");
@@ -203,7 +203,7 @@ namespace ProjectGenerator
             #endregion
         }
 
-        private static void createProject(SolutionData solutionData, Solution2 solution, EnvDTE.DTE dte)
+        private static void createProject(SolutionData solutionData, Solution2 solution, DTE dte)
         {
             switch (solutionData.projectType)
             {
