@@ -15,7 +15,7 @@ Usage:
 
 Examples for the content of the txt-file.
 
-CPP_EXAMPLE:
+CPP_EMPTY_EXAMPLE:
 ---------------------------------------------------
 SOLUTION_NAME SolutionName
 
@@ -39,7 +39,7 @@ FORM FormName
 
 INTERFACE InterfaceName
 
-CS_CONSOLE:
+CS_CONSOLE_EXAMPLE:
 ---------------------------------------------------
 SOLUTION_NAME SolutionName
 
@@ -55,3 +55,7 @@ INTERFACE InterfaceName
 Disclaimer:
 ---------------------------------------------------
 I am not responsible for any physical or mental harm this project may cause under any circumstances. (I hope)
+
+Tested using Microsoft Visual Studio Ultimate 2013
+
+Version 12.0.30501.00 Update 2
